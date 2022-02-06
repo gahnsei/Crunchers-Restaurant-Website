@@ -4,12 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./crunchers-homepage.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
       rel="stylesheet"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,8 +24,7 @@
     <title>Document</title>
   </head>
   <body>
-
-    <header id="navBar">
+    <nav id="navBar">
       <h1 id="logo">
         <a href="#" class="cleanLink">Crunchers</a>
       </h1>
@@ -32,26 +34,99 @@
       <h2 id="orderNow" class="h2">
         <a href="#" class="cleanLink">Order Now</a>
       </h2>
-    </header>
+    </nav>
 
     <main>
-    <div id="entrees">
 
-        <div id="entree1" class="entreeImg">
-          <button type="button" class="h2">Order</button>
+      <section id="sticky1parent">
+        <div id="sticky1"></div>
+      </section>
+
+      <section id="entrees">
+
+          <div id="entree1" class="entreeImg">
+            <button type="button" class="h2">Order</button>
+          </div>
+
+          <div id="entree2" class="entreeImg">
+            <button type="button" class="h2">Order</button>
+          </div>
+
+          <div id="entree3" class="entreeImg">
+            <button type="button" class="h2">Order</button>
+          </div>
+
+      </section>
+      
+      <section id="dessertCarouselBackground" class="carouselBackground">
+      <div class="carousel slide carousel" data-ride="carousel">
+        <div class="carousel-inner" style="height: 100%;">
+          <div id="dessertImg1" class="carousel-item active carouselImg">
+          </div>
+          <div id="dessertImg2" class="carousel-item carouselImg">
+          </div>
+          <div id="dessertImg3" class="carousel-item carouselImg">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      </section>
+
+      <section id="aboutUs">
+        <div id="aboutUsText">
+          <h2  class="h1">Get To Know Us</h2><br>
+          <h3 class="h3">Family Owned</h3>
+          <p class="p">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce semper, dolor vel dictum consectetur, nunc mauris facilisis odio, in rhoncus lorem neque non odio. Duis mi sem, rhoncus in tellus quis, eleifend pretium urna. Nullam augue nisi, dignissim sit amet placerat vitae, sollicitudin vel libero. Nunc scelerisque et augue in venenatis.
+          </p><br>
+          <h3 class="h3">Local Resources</h3>
+          <p class="p">In id ipsum eu enim ornare iaculis. Maecenas eget ullamcorper metus, ut eleifend odio. Curabitur nec consectetur risus, ut venenatis leo. Phasellus vel ligula tincidunt, pharetra risus ac, blandit turpis. Curabitur et sapien et risus ornare sodales ut id eros. Vivamus pretium ut lorem nec tristique.</p><br>
+          <h3 class="h3">Community Outreach</h3>
+          <p class="p">In id ipsum eu enim ornare iaculis. Maecenas eget ullamcorper metus, ut eleifend odio. Curabitur nec consectetur risus, ut venenatis leo. Phasellus vel ligula tincidunt, pharetra risus ac, blandit turpis. Curabitur et sapien et risus ornare sodales ut id eros. Vivamus pretium ut lorem nec tristique.</p>
         </div>
 
-        <div id="entree2" class="entreeImg">
-          <button type="button" class="h2">Order</button>
+        <div id="map"></div>
+      </section>
+
+      <section id="drinksCarouselBackground" class="carouselBackground">
+        <div class="carousel slide carousel" data-ride="carousel">
+          <div class="carousel-inner" style="height: 100%;">
+            <div id="drinksImg1" class="carousel-item active carouselImg">
+            </div>
+            <div id="drinksImg2" class="carousel-item carouselImg">
+            </div>
+            <div id="drinksImg3" class="carousel-item carouselImg">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
+        </section>
+      
+    </main>
 
-        <div id="entree3" class="entreeImg">
-          <button type="button" class="h2">Order</button>
-        </div>
+  <!-- <footer>
+    <section>
+      <p>Lorem Ipsum</p>
+    </section>
+  </footer> -->
 
-    </div>
-
-  </main>
     <script src="./crunchers-homepage.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
 </html>
